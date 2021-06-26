@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div>
+    Login
+    <form asp-action="LoginView" asp-controller="Login">
+        <div class="form-group">
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
+    </form>
+    Register
+    <form asp-action="RegisterUser" asp-controller="Login">
+        <div class="form-group">
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </div>
+    </form>
+
+    Data
+    <form asp-action="AllData" asp-controller="Data">
+        <div class="form-group">
+            <input type="submit" value="View Data" class="btn btn-primary" />
+        </div>
+    </form>
+
+</div>
